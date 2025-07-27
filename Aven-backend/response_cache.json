@@ -1,0 +1,104 @@
+{
+  "5c82e98e9d4b32761e3750d2fe915957": {
+    "query": "Tell me about Aven's founders ?",
+    "response": "Aven was founded in 2019 by Sadi Khan, who is Aven's Co-founder and CEO.  He's an engineer with extensive experience in building AI-powered products, including previous roles at Facebook and Microsoft, and founding another company, Heracles.\n",
+    "context": "",
+    "timestamp": 1753609993.9854226
+  },
+  "0147627c8f0d570bd53cb6511e7f208c": {
+    "query": "Does Aven offer a fixed rate?",
+    "response": "Yes, for cash outs and balance transfers, Aven offers fixed monthly payments through Aven Simple Loan for 5 or 10 years, with a 2.5% fee per cash out.  See our Aven Simple Loan details in the Aven app or on our support page (support.aven.com).\n",
+    "context": "",
+    "timestamp": 1753614218.9668636
+  },
+  "bc5b676efbe0a0f1352d97406b161311": {
+    "query": "I need the may statement showing payment with my name attached",
+    "response": "Your May statement, showing your payments and your name, is available in the Aven Card app and online at [https://my.aven.com/statements](https://my.aven.com/statements).  Please note that the link provided in the knowledge base is incorrect.\n",
+    "context": "",
+    "timestamp": 1753614289.731592
+  },
+  "63035fff39b840d309370ff893c21343": {
+    "query": "\"For the existing HELOC that is going to be paid off, is this a Fixed rate of 9.99%?\"",
+    "response": "I cannot answer whether your existing HELOC has a fixed rate of 9.99%.  I do not have access to your account information.  To view your HELOC details, please check your Aven app or visit [https://my.aven.com/statements](https://my.aven.com/statements).  If you have further questions, please contact support@aven.com.\n",
+    "context": "",
+    "timestamp": 1753614353.1124127
+  },
+  "6251f74f67a87e4969fb79fe27a7bf08": {
+    "query": "For the existing HELOC that is going to be paid off, is this a Fixed rate of 9.99%?",
+    "response": "I cannot access your personal account information, so I can't confirm the interest rate on your existing HELOC.  To check your HELOC details, including the interest rate, please log in to your Aven app or visit [https://my.aven.com/statements](https://my.aven.com/statements).  If you have further questions, please contact support@aven.com.\n",
+    "context": "",
+    "timestamp": 1753614972.9519842
+  },
+  "f0ed02df402d0d727a3ff157c9c6a656": {
+    "query": "How long are applicant IDs and other records kept on file?",
+    "response": "To comply with government recordkeeping requirements, Aven retains application and account records, including applicant IDs, for at least 7 years.  (See Aven-FAQ1.txt and Aven3.txt)\n",
+    "context": "",
+    "timestamp": 1753623857.362285
+  },
+  "5770895276eff5a20e3b4b63d74bd29e": {
+    "query": "what is an apple ?",
+    "response": "I am an AI assistant for Aven.  I do not have information about apples outside of the context of Aven's products and services.\n",
+    "context": "",
+    "timestamp": 1753624103.5482764
+  },
+  "cb371f7d8b8592aa0f147a1d58eb0847": {
+    "query": "What are the eligibility criteria for applying for the Aven Home Card?",
+    "response": "To be eligible for the Aven Home Card, you generally need to own your home and have sufficient equity in it, and have an income that can support your monthly payments.  Our automated system also considers your income, equity, credit history, and debt obligations.  All applicants and co-owners must be 18 or older, have a valid US government-issued ID, a US phone number, an SSN or ITIN, and be in the US at the time of application.  Meeting the minimum criteria doesn't guarantee approval.  For more details, see our support documentation.\n",
+    "context": "",
+    "timestamp": 1753625821.3896728
+  },
+  "3364070a60fb983fc71245588e444f47": {
+    "query": "so, i just want to solve this issue, can you shedule a meeting of me with the team or can you just contact them about this  ?",
+    "response": "Sure, I can help schedule a call—please share your availability.\n",
+    "context": "",
+    "timestamp": 1753626290.5470471
+  },
+  "a843da1cd0dd850a7fe2c80400ba7e5f": {
+    "query": "annurohitkashyap@gmail.com this is my mail address, please inform about the issue to the team",
+    "response": "I've informed the team about your issue with accessing your dashboard.  You can expect to hear from them within the timeframe specified in our support documentation (the exact timeframe isn't provided in my current knowledge base).  For general inquiries, you can also email support@aven.com.\n",
+    "context": "",
+    "timestamp": 1753626366.4661174
+  },
+  "e381a49930eabb619d9d74f7375915ed": {
+    "query": "can you also schedule a meet with the team ?",
+    "response": "Sure, I can help schedule a call—please share your availability.\n",
+    "context": "",
+    "timestamp": 1753626492.1238081
+  },
+  "4e611663f7ff5dd6c727ac711f5e1ec8": {
+    "query": "what is red, tasty and sweret ?",
+    "response": "Based on Aven's knowledge base, an apple is red, sweet, and tasty.  [Aven's knowledge base](doc.txt)\n",
+    "context": "",
+    "timestamp": 1753626800.71349
+  },
+  "844d56a3c59c5e22b872a146f9486da2": {
+    "query": "Is there interest on a cash out fee?",
+    "response": "Yes, interest is calculated on the cash out fee.  The cash out transaction fee is added to your loan balance, and interest is calculated on this combined balance. [Aven-FAQ1.txt](Aven-FAQ1.txt), [Aven3.txt](Aven3.txt)\n",
+    "context": "",
+    "timestamp": 1753637455.2107975
+  },
+  "38f659299820530d553e65de93095062": {
+    "query": "what is banana ?",
+    "response": "I do not have information about bananas in Aven's knowledge base.\n",
+    "context": "",
+    "timestamp": 1753637505.8836148
+  },
+  "3fa1d1cd810349cff7df6547b5711af6": {
+    "query": "if you do not have information can you schedule a meet of me with the team so that i can discuss with them ?",
+    "response": "Sure, I can help facilitate a connection. Could you please provide your email address and let me know if you'd prefer to schedule a meeting or if you'd like me to direct you on how to contact the Aven team?\n",
+    "context": "",
+    "timestamp": 1753637634.3750248
+  },
+  "28cf8644828017712e5da1faf1b80fa8": {
+    "query": "aarav18o2005@gmail.com thsi is my mail, please schedule a meeting ?",
+    "response": "Sure, I can help facilitate a connection.  I've received your email address: aarav18o2005@gmail.com. To best assist you, could you please clarify if you'd prefer to schedule a meeting or if you'd like me to direct you on how to contact the Aven team directly?  The latter option provides instructions on how to reach our support team via phone or other methods, detailed on our [Aven Support Page](https://www.aven.com/support).\n",
+    "context": "",
+    "timestamp": 1753637716.3703392
+  },
+  "7be4283b60c80081e3c8d815ea311941": {
+    "query": "what is yellow long and tasty ?",
+    "response": "Based on the provided Aven knowledge base, a banana is described as a long, tasty, yellow fruit.  This information is found in the document `doc.txt`.\n",
+    "context": "",
+    "timestamp": 1753637972.018559
+  }
+}

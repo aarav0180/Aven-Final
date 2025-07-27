@@ -1,0 +1,6 @@
+flask
+pymongo
+pinecone-client
+openai
+google-generativeai
+requests

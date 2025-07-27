@@ -1,0 +1,92 @@
+runtime: python310
+service: backend
+
+build_env_variables:
+  GOOGLE_CLOUD_PROJECT: "zelio-455416"
+
+env_variables:
+  FLASK_ENV: "production"
+  SESSION_SECRET: "your_session_secret_key"
+  STRIPE_SECRET_KEY: "your_stripe_secret_key"
+  STRIPE_PUBLISHABLE_KEY: "your_stripe_publishable_key"
+  MONGODB_URI: "mongodb+srv://zqyg77:tA5k3UMuAscaQDaj@mizalogin.byvjwaq.mongodb.net/"
+  MONGODB_DATABASE: "mongodb+srv://mizazqyg:A7D1xi9L5f0P2cca@databases.8spds.mongodb.net/"
+  MONGODB_URI2: "mongodb+srv://mizazqyg:A7D1xi9L5f0P2cca@databases.8spds.mongodb.net/"
+  OPENROUTER_API_KEY: "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"
+  V3_API_KEY: "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"
+  V3_BACKUP_API_KEY: "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"
+  BACKEND_URL: "https://backend-dot-zelio-455416.ew.r.appspot.com"
+  FRONTEND_URL: "https://frontend-dot-zelio-455416.ew.r.appspot.com"
+  SESSION_COOKIE_DOMAIN: ".zelio-455416.ew.r.appspot.com"
+  SESSION_COOKIE_SECURE: "true"
+  SESSION_COOKIE_SAMESITE: "None"
+  CORS_ALLOWED_ORIGINS: "*"  # Allow dynamic origins, we'll handle validation in the app
+  TEMP_FOLDER: "/tmp"
+  PYTHONUNBUFFERED: "1"
+  PYTHONPATH: "/app"
+  GOOGLE_APPLICATION_CREDENTIALS: "service-account.json"
+  LOG_LEVEL: "info"
+  TRANSFORMERS_CACHE: "/tmp/models"
+  SENTENCE_TRANSFORMERS_HOME: "/tmp/models"
+  HF_HOME: "/tmp/huggingface"
+  TRANSFORMERS_OFFLINE: "0"
+  TRANSFORMERS_LOCAL_FILES_ONLY: "0"
+  SENTENCE_TRANSFORMERS_SHOW_PROGRESS_BAR: "0"
+  MODEL_CACHE_DIR: "/tmp/models"
+  GUNICORN_CMD_ARGS: "--worker-class=gevent --workers=2 --threads=4 --timeout=120 --graceful-timeout=300 --keep-alive=60 --max-requests=1000 --max-requests-jitter=50"
+
+handlers:
+  - url: /static
+    static_dir: static
+    secure: always
+    http_headers:
+      X-Accel-Buffering: 'no'
+      Access-Control-Allow-Origin: '*'  # Static files are public
+      Access-Control-Allow-Methods: 'GET, POST, OPTIONS'
+      Access-Control-Allow-Headers: 'Content-Type, X-User-Role, Authorization'
+      Access-Control-Allow-Credentials: 'true'
+
+  - url: /.*
+    script: auto
+    secure: always
+
+instance_class: F4_1G
+
+automatic_scaling:
+  target_cpu_utilization: 0.65
+  min_instances: 0
+  min_idle_instances: 0
+  max_instances: 10
+  target_throughput_utilization: 0.6
+  max_concurrent_requests: 30
+  min_pending_latency: 10000ms
+  max_pending_latency: automatic
+
+inbound_services:
+- warmup
+
+network:
+  instance_tag: streaming
+  forwarded_ports:
+    - 80:8080
+    - 443:8443
+  session_affinity: true
+
+readiness_check:
+  app_start_timeout_sec: 1800
+  check_interval_sec: 60
+  timeout_sec: 10
+  failure_threshold: 3
+  success_threshold: 2
+
+liveness_check:
+  check_interval_sec: 30
+  timeout_sec: 4
+  failure_threshold: 2
+  success_threshold: 2
+
+runtime_config:
+  python_version: "3.10"
+  operating_system: "ubuntu22"
+
+entrypoint: gunicorn -b :$PORT --worker-class=sync --workers=2 --threads=4 --timeout=300 --graceful-timeout=300 --keep-alive=60 --max-requests=1000 --max-requests-jitter=50 harmonia_backend:app
